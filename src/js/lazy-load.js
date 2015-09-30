@@ -11,7 +11,7 @@ s.lazy = {
         var slide = s.slides.eq(index);
         var img = slide.find('.swiper-lazy:not(.swiper-lazy-loaded):not(.swiper-lazy-loading)');
         if (slide.hasClass('swiper-lazy') && !slide.hasClass('swiper-lazy-loaded') && !slide.hasClass('swiper-lazy-loading')) {
-            img.add(slide[0]);
+            img = img.add(slide[0]);
         }
         if (img.length === 0) return;
 
